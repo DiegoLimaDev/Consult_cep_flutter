@@ -51,8 +51,10 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 child: loading
-                    ? const Center(
-                        child: CircularProgressIndicator(),
+                    ? const Expanded(
+                        child: Center(
+                          child: CircularProgressIndicator(),
+                        ),
                       )
                     : SizedBox(
                         width: double.infinity,
